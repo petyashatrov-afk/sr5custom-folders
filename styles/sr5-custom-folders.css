@@ -1,0 +1,181 @@
+/* ===== SR5 Custom Folders ===== */
+
+.sr5cf-add-folder,
+.sr5cf-add-folder-section {
+  color: var(--color-text-light-primary, #fff);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 3px;
+  transition: background-color 120ms ease-in-out;
+}
+
+.sr5cf-add-folder:hover,
+.sr5cf-add-folder-section:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.sr5cf-folder {
+  margin: 4px 0;
+  border: 1px solid rgba(120, 120, 120, 0.35);
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.sr5cf-folder.deleted {
+  opacity: 0.5;
+  border-color: rgba(120, 0, 0, 0.25);
+  background-color: rgba(60, 0, 0, 0.06);
+}
+
+.sr5cf-folder.deleted .sr5cf-folder-header {
+  background-color: rgba(80, 0, 0, 0.2);
+  cursor: default;
+}
+
+.sr5cf-folder-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  cursor: pointer;
+  user-select: none;
+  background-color: rgba(80, 80, 100, 0.18);
+  border-bottom: 1px solid rgba(120, 120, 120, 0.25);
+  border-radius: 4px 4px 0 0;
+}
+
+.sr5cf-folder-header:hover {
+  background-color: rgba(80, 80, 100, 0.32);
+}
+
+.sr5cf-folder-toggle {
+  width: 1em;
+  text-align: center;
+}
+
+.sr5cf-folder-name {
+  font-weight: 600;
+  flex: 1;
+}
+
+.sr5cf-folder-count {
+  opacity: 0.7;
+  font-size: 0.85em;
+}
+
+.sr5cf-folder-actions {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.sr5cf-folder-actions a {
+  opacity: 0.55;
+  cursor: pointer;
+  transition: opacity 120ms ease;
+}
+
+.sr5cf-folder-actions a:hover {
+  opacity: 1;
+}
+
+.sr5cf-folder-body {
+  padding: 2px 0;
+  min-height: 2em;
+}
+
+/* highlight when an item is being dragged over a drop target */
+.sr5cf-drop-hover {
+  outline: 2px dashed var(--color-warm-2, #ffaa33);
+  outline-offset: -2px;
+  background-color: rgba(255, 200, 80, 0.12) !important;
+}
+
+/* root drop-zone visual hint */
+.sr5cf-root-droptarget {
+  transition: background-color 120ms ease-in-out;
+}
+
+/* ===== Universal Mods tab on ItemSheet ===== */
+
+.sr5cf-mods-nav {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Ensure our injected tab section behaves like the native ones */
+.sr5cf-mods-section {
+  display: none;
+  flex-flow: column nowrap;
+  overflow: hidden;
+}
+.sr5cf-mods-section.active {
+  display: flex;
+}
+
+.sr5cf-mods-section .sr5cf-mods-droptarget {
+  min-height: 4em;
+  padding: 4px;
+  border: 1px dashed rgba(160, 160, 160, 0.35);
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+.sr5cf-mods-section .sr5cf-mods-empty {
+  font-style: italic;
+}
+
+.sr5cf-mods-section .list-item-container {
+  border-bottom: 1px solid rgba(120, 120, 120, 0.18);
+  padding: 2px 0;
+}
+.sr5cf-mods-section .list-item-container:last-child {
+  border-bottom: none;
+}
+
+.sr5cf-mods-section .list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 4px;
+}
+
+.sr5cf-mods-section .list-item-icons {
+  display: inline-flex;
+  gap: 6px;
+}
+
+.sr5cf-mods-section .list-item-icons a {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.sr5cf-mods-section .list-item-icons a:hover {
+  opacity: 1;
+}
+
+.sr5cf-mods-section .sr5cf-folder {
+  margin: 2px 0;
+}
+
+/* Add-item / Add-folder buttons in Modifications header */
+.sr5cf-mod-add-folder,
+.sr5cf-mod-add-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 4px;
+  cursor: pointer;
+  color: var(--color-text-light-primary, #fff);
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 3px;
+  transition: background-color 120ms ease-in-out;
+}
+.sr5cf-mod-add-folder:hover,
+.sr5cf-mod-add-item:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
