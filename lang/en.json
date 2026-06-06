@@ -1,0 +1,35 @@
+{
+  "SR5CF": {
+    "ModuleTitle": "SR5 Custom Folders",
+    "AddFolder": "Add folder",
+    "AddFolderHere": "Add folder to this section",
+    "FolderName": "Folder name",
+    "FolderNamePrompt": "Enter folder name",
+    "CreateFolder": "Create folder",
+    "RenameFolder": "Rename folder",
+    "DeleteFolder": "Delete folder",
+    "DeleteFolderConfirm": "Delete this folder? Items inside will move back to the section root.",
+    "Modifications": "Modifications",
+    "ModsTabLabel": "Modifications",
+    "DropAnyItemHere": "Drag any item here to attach as modification",
+    "Equip": "Equip",
+    "Unequip": "Unequip",
+    "Settings": {
+      "EnableFolders": "Enable custom folders",
+      "EnableFoldersHint": "Show the + button to create custom folders on the character sheet.",
+      "EnableUniversalMods": "Enable universal modifications",
+      "EnableUniversalModsHint": "Adds a 'Modifications' tab to every item sheet, accepting any item as a nested modification.",
+      "AllowRecursiveMods": "Allow nested mods inside mods",
+      "AllowRecursiveModsHint": "If enabled, items already used as modifications can themselves contain further modifications (recursive).",
+      "EnableSearch": "Enable section search",
+      "EnableSearchHint": "Adds a search box to each actor-sheet tab (one combined search per tab; inventory searches all item categories at once)."
+    },
+    "Errors": {
+      "NoActor": "No actor found.",
+      "FolderExists": "A folder with this name already exists.",
+      "EmptyName": "Folder name cannot be empty."
+    },
+    "CompendiumFolder": "Compendium folder (read-only, mirrored from the source pack)",
+    "SearchPlaceholder": "Search..."
+  }
+}

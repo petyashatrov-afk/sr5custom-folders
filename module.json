@@ -1,0 +1,45 @@
+{
+  "id": "sr5-custom-folders",
+  "title": "SR5 — Custom Folders & Universal Mods",
+  "description": "Adds custom folders for any character-sheet section (inventory types, actions, spells, qualities, etc.) and lets any item carry nested 'modifications' just like weapon mods. Action sections (General/Matrix/IC) mirror their source-compendium folders read-only. Adds a per-tab search box to actor sheets (one combined search per tab).",
+  "version": "0.4.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14",
+    "maximum": "14"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "shadowrun5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "0.33.0"
+        }
+      }
+    ]
+  },
+  "authors": [
+    {
+      "name": "Custom Module"
+    }
+  ],
+  "esmodules": [
+    "scripts/main.js"
+  ],
+  "styles": [
+    "styles/sr5-custom-folders.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "ru",
+      "name": "Русский",
+      "path": "lang/ru.json"
+    }
+  ]
+}
